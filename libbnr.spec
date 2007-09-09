@@ -1,10 +1,11 @@
 %define	major 2
-%define libname	%mklibname bnr %{major}
+%define libname %mklibname bnr %{major}
+%define develname %mklibname bnr -d
 
 Summary:	Bayesian Noise Reduction Library
 Name:		libbnr
 Version:	2.0.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		System/Libraries
 License:	GPL
 URL:		http://bnr.nuclearelephant.com/
@@ -44,14 +45,14 @@ is left is only data relevant to the classification. libbnr can be
 linked in with your classifier and called using the standard C
 interface. 
 
-%package -n	%{libname}-devel
+%package -n	%{develname}
 Summary:	Development library and header files for the %{name} library
 Group:		Development/C
-Obsoletes:	%{name}-devel
-Provides:	%{name}-devel = %{version}-%{release}
 Requires:	%{libname} = %{version}-%{release}
+Provides:	%{name}-devel = %{version}-%{release}
+Obsoletes:	%{mklibname bnr 2 -d}
 
-%description -n	%{libname}-devel
+%description -n	%{develname}
 libbnr is an implementation of the Bayesian Noise Reduction (BNR)
 algorithm. All samples of text contain some degree of noise (data
 which is either intentionally or unintentionally irrelevant to
@@ -97,11 +98,9 @@ This package contains development library and header files for the
 %doc README
 %{_libdir}/*.so.*
 
-%files -n %{libname}-devel
+%files -n %{develname}
 %defattr(-,root,root)
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/*.a
 %{_libdir}/*.la
-
-
