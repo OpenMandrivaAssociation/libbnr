@@ -13,7 +13,6 @@ Source0:	http://dspam.nuclearelephant.com/sources/%{name}-%{version}.tar.bz2
 BuildRequires:	automake1.7
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 libbnr is an implementation of the Bayesian Noise Reduction (BNR)
