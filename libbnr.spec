@@ -5,7 +5,7 @@
 Summary:	Bayesian Noise Reduction Library
 Name:		libbnr
 Version:	2.0.3
-Release:	%mkrel 4
+Release:	%mkrel 5
 Group:		System/Libraries
 License:	GPL
 URL:		http://bnr.nuclearelephant.com/
