@@ -5,12 +5,12 @@
 Summary:	Bayesian Noise Reduction Library
 Name:		libbnr
 Version:	2.0.3
-Release:	%mkrel 6
+Release:	%mkrel 7
 Group:		System/Libraries
 License:	GPL
 URL:		http://bnr.nuclearelephant.com/
 Source0:	http://dspam.nuclearelephant.com/sources/%{name}-%{version}.tar.bz2
-BuildRequires:	automake1.7
+BuildRequires:	automake
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
@@ -75,7 +75,7 @@ This package contains development library and header files for the
 %build
 #export WANT_AUTOCONF_2_5=1
 #rm -f configure
-#libtoolize --copy --force && aclocal-1.7 && autoconf --force && autoheader && automake-1.7
+#libtoolize --copy --force && aclocal && autoconf --force && autoheader && automake
 
 %configure2_5x
 
