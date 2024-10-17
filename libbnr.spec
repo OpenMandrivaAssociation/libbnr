@@ -8,7 +8,7 @@ Version:	2.0.3
 Release:	9
 Group:		System/Libraries
 License:	GPL
-URL:		http://bnr.nuclearelephant.com/
+URL:		https://bnr.nuclearelephant.com/
 Source0:	http://dspam.nuclearelephant.com/sources/%{name}-%{version}.tar.bz2
 BuildRequires:	automake
 BuildRequires:	autoconf2.5
