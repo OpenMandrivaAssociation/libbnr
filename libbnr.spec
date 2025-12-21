@@ -10,6 +10,8 @@ Group:		System/Libraries
 License:	GPL
 URL:		https://bnr.nuclearelephant.com/
 Source0:	http://dspam.nuclearelephant.com/sources/%{name}-%{version}.tar.bz2
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	automake
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
